@@ -1,0 +1,65 @@
+.centered {
+  display: flex;
+}
+.cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.character {
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+}
+
+.character-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.character__photo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.character__photo img {
+  width: 100%;
+  height: auto;
+}
+
+.character__info {
+  left: 40%;
+  color: #8d7a7a;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.character__info__name {
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
+  transform: translateY(50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.character__info__description {
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.character__info:hover .character__info__name {
+  bottom: 100%;
+  transform: translateY(0);
+}
+
+.character__info:hover .character__info__description {
+  opacity: 1;
+}

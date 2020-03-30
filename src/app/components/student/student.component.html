@@ -1,0 +1,19 @@
+<div class="centered">
+  <div class="cards">
+    <div class="character" *ngFor="let student of studentQuery.page$ | async">
+      <div class="character-container">
+        <div class="character-photo">
+          <img [src]="student.image" alt="" />
+        </div>
+        <div class="character__info">
+          <p class="character__info__name">
+            {{ student.name }} {{ student.species }}
+          </p>
+          <p class="character__info__description">
+            {{ student.gender }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

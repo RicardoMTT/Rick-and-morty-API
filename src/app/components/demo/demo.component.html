@@ -1,0 +1,27 @@
+<div>
+    <div *ngIf="!user">
+        <h6>
+            Social Login Demo
+        </h6>
+        <div>
+            <h4>Not signed in</h4>
+            <p>Sing in with</p>
+        </div>
+        <div>
+            <button (click)="signInWithGoogle()">Google</button>
+        </div>
+    </div>
+
+    <div *ngIf="user">
+        <h6>
+            Social login Demo
+        </h6>
+        <div>
+            <h4>{{ user.name }}</h4>
+            <h4>{{ user.email}}</h4>
+        </div>
+        <div>
+            <button (click)="signOut()">Sign out</button>
+        </div>
+    </div>
+</div>

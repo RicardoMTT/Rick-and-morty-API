@@ -1,0 +1,11 @@
+<div style="text-align: center;">
+  <mat-form-field style="text-align: center;">
+    <input matInput [(ngModel)]="nuevo" />
+  </mat-form-field>
+  <div style="display: flex;justify-content: center;">
+    <div mat-dialog-actions>
+      <button mat-button (click)="onClickNO()">NO</button>
+      <button mat-button [mat-dialog-close]="true">SI</button>
+    </div>
+  </div>
+</div>
